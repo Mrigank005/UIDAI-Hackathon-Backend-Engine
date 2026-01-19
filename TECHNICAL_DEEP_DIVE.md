@@ -100,20 +100,20 @@ graph TD
         CSV_Demo[Demographic CSVs]
     end
 
-    subgraph Backend_Engine [Backend Engine (Python)]
-        Ingest[Data Ingestion (Chunked Loading)]
+    subgraph Backend_Engine ["Backend Engine (Python)"]
+        Ingest["Data Ingestion (Chunked Loading)"]
         Preproc[Preprocessing & Cleaning]
-        Ensemble[ML Ensemble (IF, SVM, LOF, AE)]
+        Ensemble["ML Ensemble (IF, SVM, LOF, AE)"]
         Rules[Business Rule Engine]
         JSON_Gen[JSON Generator]
     end
 
-    subgraph Frontend_App [Frontend Dashboard (React)]
-        Store[Data Store (app_data.json)]
-        UI_Satark[Satark (Security View)]
-        UI_Saksham[Saksham (Compliance View)]
-        UI_Kartavya[Kartavya (Action Center)]
-        UI_Pravas[Pravas (Migration View)]
+    subgraph Frontend_App ["Frontend Dashboard (React)"]
+        Store["Data Store (app_data.json)"]
+        UI_Satark["Satark (Security View)"]
+        UI_Saksham["Saksham (Compliance View)"]
+        UI_Kartavya["Kartavya (Action Center)"]
+        UI_Pravas["Pravas (Migration View)"]
     end
 
     CSV_Enrol --> Ingest
