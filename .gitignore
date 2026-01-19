@@ -1,0 +1,51 @@
+# ==============================================
+# UIDAI Hackathon Dashboard - .gitignore
+# ==============================================
+
+# Virtual Environment
+venv/
+.venv/
+env/
+.env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==============================================
+# DATA FILES - CRITICAL: DO NOT COMMIT!
+# ==============================================
+Data/
+*.csv
+*.xlsx
+*.xls
+
+# Generated Output
+app_data.json
+
+# ==============================================
+# IDE & System Files
+# ==============================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebooks Checkpoints
+.ipynb_checkpoints/
+
+# TensorFlow/Keras
+*.h5
+*.keras
+logs/
+checkpoints/
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
